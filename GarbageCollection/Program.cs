@@ -6,12 +6,18 @@ namespace GarbageCollection
     {
         static void Main(string[] args)
         {
-            var a = "gg";
-            var b = "inin";
-            var c = "der";
-            while(true)
+            //// boxing
+            //int a = 1;
+            //while(true)
+            //{
+            //    object b = a;
+            //}
+
+            object a = 1;
+            // unboxing
+            while (true)
             {
-                string d = "gg" + "inin" + "der";
+                int b = (int)a;
             }
         }
     }

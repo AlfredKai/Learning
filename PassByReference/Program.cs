@@ -17,36 +17,34 @@ namespace PassByReference
         static void Main(string[] args)
         {
             int a = 0;
-            Console.WriteLine($"int before: {a}");
+            Console.WriteLine($"int with 'ref' before: {a}");
             ChangeNum(ref a);
-            Console.WriteLine($"int after: {a}");
+            Console.WriteLine($"int with 'ref' after: {a}");
             Console.WriteLine();
 
-            ValueType c = new ValueType();
-            Console.WriteLine($"Value type with 'ref' keyword before: {c.num}");
-            ChangeNum(ref c);
-            Console.WriteLine($"Value type with 'ref' keyword after: {c.num}");
+            ValueType b = new ValueType();
+            Console.WriteLine($"Value type with 'ref' before: {b.num}");
+            ChangeNum(ref b);
+            Console.WriteLine($"Value type with 'ref' after: {b.num}");
+            Console.WriteLine();
+
+            ReferenceType c = new ReferenceType();
+            Console.WriteLine($"Reference type before: {c.num}");
+            ChangeNum(c);
+            Console.WriteLine($"Reference type after: {c.num}");
             Console.WriteLine();
 
             ReferenceType d = new ReferenceType();
-            Console.WriteLine($"Reference type 'ref' keyword before: {d.num}");
+            Console.WriteLine($"Reference type 'ref' before: {d.num}");
             ChangeNum(ref d);
-            Console.WriteLine($"Reference type 'ref' keyword after: {d.num}");
+            Console.WriteLine($"Reference type 'ref' after: {d.num}");
             Console.WriteLine();
+
+            Console.Read();
         }
         public static void ChangeNum(ref int p)
         {
             p = 1;
-        }
-
-        public static void ChangeNum(int[] a)
-        {
-            a[1] = 9;
-        }
-
-        public static void ChangeNum(ref int[] a)
-        {
-            a[1] = 9;
         }
 
         public static void ChangeNum(ValueType p)
@@ -61,16 +59,16 @@ namespace PassByReference
 
         public static void ChangeNum(ReferenceType p)
         {
-            var g = new ReferenceType();
-            g.num = 2;
-            p = g;
+            var t = new ReferenceType();
+            t.num = 2;
+            p = t;
         }
 
         public static void ChangeNum(ref ReferenceType p)
         {
-            var g = new ReferenceType();
-            g.num = 2;
-            p = g;
+            var t = new ReferenceType();
+            t.num = 2;
+            p = t;
         }
     }
 }
