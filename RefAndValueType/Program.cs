@@ -22,6 +22,18 @@ namespace RefAndValueType
             Console.WriteLine($"int after: {a}");
             Console.WriteLine();
 
+            int[] intArray = new int[] { 1, 2, 3 };
+            Console.WriteLine($"int array before: {intArray[1]}");
+            ChangeNum(intArray);
+            Console.WriteLine($"int array after: {intArray[1]}");
+            Console.WriteLine();
+
+            string s = "string";
+            Console.WriteLine($"string before: {s}");
+            ChangeStr(s);
+            Console.WriteLine($"string after: {s}");
+            Console.WriteLine();
+
             ValueType b = new ValueType();
             Console.WriteLine($"Value type before: {b.num}");
             ChangeNum(b);
@@ -34,12 +46,12 @@ namespace RefAndValueType
             Console.WriteLine($"Reference type after: {c.num}");
             Console.WriteLine();
 
-            int[] intArray = new int[] { 1, 2, 3 };
-            Console.WriteLine($"int array before: {intArray[1]}");
-            ChangeNum(intArray);
-            Console.WriteLine($"int array after: {intArray[1]}");
-
             Console.Read();
+        }
+
+        public static void ChangeStr(string s)
+        {
+            s = "change";
         }
 
         public static void ChangeNum(int p)

@@ -7,21 +7,13 @@ namespace GarbageCollection
     {
         static void Main(string[] args)
         {
-            //string a = "string";
-            //while(true)
-            //{
-            //    //int b = 3;
-            //    // string b = "string" + a;
-            //}
-
-            //Finalizer
+            string s = "string";
             while (true)
             {
-                for (int i = 0; i < 10; i++)
-                {
-                    var a = new Destroyer();
-                }
-                Thread.Sleep(1);
+                //int a = 3;
+                //int[] a = new int[10];
+                //string a = "bridgewell is very well";
+                //string a = "string" + s;
             }
 
             ////Boxing
@@ -36,6 +28,16 @@ namespace GarbageCollection
             //while (true)
             //{
             //    int b = (int)a;
+            //}
+
+            //Finalizer
+            //while (true)
+            //{
+            //    for (int i = 0; i < 10; i++)
+            //    {
+            //        var a = new Destroyer();
+            //    }
+            //    Thread.Sleep(1);
             //}
         }
     }
