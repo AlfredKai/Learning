@@ -7,18 +7,18 @@ namespace GarbageCollection
     {
         static void Main(string[] args)
         {
-            string s = "string";
-            while (true)
-            {
-                //int a = 3;
-                //int[] a = new int[10];
-                //string a = "bridgewell is very well";
-                //string a = "string" + s;
-            }
+            //string s = "string";
+            //while (true)
+            //{
+            //    //int a = 3;
+            //    //int[] a = new int[10];
+            //    //string a = "bridgewell is very well";
+            //    string a = "string" + s;
+            //}
 
             ////Boxing
             //int a = 1;
-            //while(true)
+            //while (true)
             //{
             //    object b = a;
             //}
@@ -30,7 +30,7 @@ namespace GarbageCollection
             //    int b = (int)a;
             //}
 
-            //Finalizer
+            ////Finalizer
             //while (true)
             //{
             //    for (int i = 0; i < 10; i++)

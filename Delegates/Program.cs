@@ -28,10 +28,11 @@ namespace Delegates
 
         static void Main(string[] args)
         {
-            //a("this is log");
+            //a("this is invoke");
+            //Print("this is method");
 
             //// lambda
-            //Action<string> action = (s) => Console.WriteLine(s);
+            //Action<string> action = s => Console.WriteLine(s);
             //action("this is lambda");
 
             //// lambda
@@ -39,7 +40,7 @@ namespace Delegates
             //for (int i = 1; i <= 100; i++)
             //    list.Add(i);
 
-            //List<int> result = list.FindAll(i => i % 2 == 0);
+            //List<int> result = list.FindAll(i =>  i % 2 == 0);
 
             //foreach (var item in result)
             //    Console.WriteLine(item);
@@ -50,9 +51,11 @@ namespace Delegates
             //a.Print = (s) => Console.WriteLine("hello");
             //a.Print("invoke");
 
-            P a = new P();
-            a.OnCreate += (s) => Console.WriteLine(s);
-            a.InvokeEvent();
+            //// Event
+            //P a = new P();
+            //a.OnCreate += (s) => Console.WriteLine(s);
+            //a.OnCreate += (s) => Console.WriteLine(s);
+            //a.InvokeEvent();
 
             Console.Read();
         }

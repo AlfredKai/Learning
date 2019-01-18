@@ -16,35 +16,35 @@ namespace RefAndValueType
     {
         static void Main(string[] args)
         {
-            int a = 0;
-            Console.WriteLine($"int before: {a}");
-            ChangeNum(a);
-            Console.WriteLine($"int after: {a}");
-            Console.WriteLine();
+            //int a = 0;
+            //Console.WriteLine($"int before: {a}");
+            //ChangeNum(a);
+            //Console.WriteLine($"int after: {a}");
+            //Console.WriteLine();
 
-            int[] intArray = new int[] { 1, 2, 3 };
-            Console.WriteLine($"int array before: {intArray[1]}");
-            ChangeNum(intArray);
-            Console.WriteLine($"int array after: {intArray[1]}");
-            Console.WriteLine();
+            //int[] intArray = new int[] { 1, 2, 3 };
+            //Console.WriteLine($"int array before: {intArray[1]}");
+            //ChangeNum(intArray);
+            //Console.WriteLine($"int array after: {intArray[1]}");
+            //Console.WriteLine();
 
-            string s = "string";
-            Console.WriteLine($"string before: {s}");
-            ChangeStr(s);
-            Console.WriteLine($"string after: {s}");
-            Console.WriteLine();
+            //string s = "string";
+            //Console.WriteLine($"string before: {s}");
+            //ChangeStr(s);
+            //Console.WriteLine($"string after: {s}");
+            //Console.WriteLine();
 
-            ValueType b = new ValueType();
-            Console.WriteLine($"Value type before: {b.num}");
-            ChangeNum(b);
-            Console.WriteLine($"Value type after: {b.num}");
-            Console.WriteLine();
+            //ValueType b = new ValueType();
+            //Console.WriteLine($"Value type before: {b.num}");
+            //ChangeNum(b);
+            //Console.WriteLine($"Value type after: {b.num}");
+            //Console.WriteLine();
 
-            ReferenceType c = new ReferenceType();
-            Console.WriteLine($"Reference type before: {c.num}");
-            ChangeNum(c);
-            Console.WriteLine($"Reference type after: {c.num}");
-            Console.WriteLine();
+            //ReferenceType c = new ReferenceType();
+            //Console.WriteLine($"Reference type before: {c.num}");
+            //ChangeNum(c);
+            //Console.WriteLine($"Reference type after: {c.num}");
+            //Console.WriteLine();
 
             Console.Read();
         }

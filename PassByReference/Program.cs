@@ -16,29 +16,29 @@ namespace PassByReference
     {
         static void Main(string[] args)
         {
-            int a = 0;
-            Console.WriteLine($"int with 'ref' before: {a}");
-            ChangeNum(ref a);
-            Console.WriteLine($"int with 'ref' after: {a}");
-            Console.WriteLine();
+            //int a = 0;
+            //Console.WriteLine($"int with 'ref' before: {a}");
+            //ChangeNum(ref a);
+            //Console.WriteLine($"int with 'ref' after: {a}");
+            //Console.WriteLine();
 
-            ValueType b = new ValueType();
-            Console.WriteLine($"Value type with 'ref' before: {b.num}");
-            ChangeNum(ref b);
-            Console.WriteLine($"Value type with 'ref' after: {b.num}");
-            Console.WriteLine();
+            //ValueType b = new ValueType();
+            //Console.WriteLine($"Value type with 'ref' before: {b.num}");
+            //ChangeNum(ref b);
+            //Console.WriteLine($"Value type with 'ref' after: {b.num}");
+            //Console.WriteLine();
 
-            ReferenceType c = new ReferenceType();
-            Console.WriteLine($"Reference type before: {c.num}");
-            ChangeNum(c);
-            Console.WriteLine($"Reference type after: {c.num}");
-            Console.WriteLine();
+            //ReferenceType c = new ReferenceType();
+            //Console.WriteLine($"Reference type before: {c.num}");
+            //ChangeNum(c);
+            //Console.WriteLine($"Reference type after: {c.num}");
+            //Console.WriteLine();
 
-            ReferenceType d = new ReferenceType();
-            Console.WriteLine($"Reference type 'ref' before: {d.num}");
-            ChangeNum(ref d);
-            Console.WriteLine($"Reference type 'ref' after: {d.num}");
-            Console.WriteLine();
+            //ReferenceType d = new ReferenceType();
+            //Console.WriteLine($"Reference type 'ref' before: {d.num}");
+            //ChangeNum(ref d);
+            //Console.WriteLine($"Reference type 'ref' after: {d.num}");
+            //Console.WriteLine();
 
             Console.Read();
         }
